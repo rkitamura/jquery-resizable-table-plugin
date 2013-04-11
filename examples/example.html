@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<script type="text/javascript"        src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script type="text/javascript"        src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.15/jquery-ui.min.js"></script>
+	<script type="text/javascript"        src="./dist/jquery.resizeable-tables.js"></script>
+	<script type="text/javascript">
+
+	$(document).ready(function()
+	{
+		$("#mytable").simpleResizableTable(); //.css('background-color', 'red');
+		$("#mytable2").simpleResizableTable().css('background-color', '#bbb');
+
+	});
+	</script>
+
+	<style>
+		TH
+		{
+			border-left: 1px solid #333;
+			border-bottom: 1px solid #333;
+		}
+	</style>
+</head>
+<body>
+
+<div id="container" style="border: 1px solid blue;">
+	<table id="mytable" style="width:100%; border: 1px solid red;" border="0" cellspacing="0" cellpadding="0" >
+	<thead>
+		<tr>
+			<th style="">Dit is een interessante zin!</th>
+			<th style="">b</th>
+			<th style="">b</th>
+			<th style="">b</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="">Dit is een interessante zin!</td>
+			<td style="">b</td>
+			<td style="">b</td>
+			<td style="">b</td>
+		</tr>
+		<tr>
+			<td style="">b</td>
+			<td style="">a</td>
+			<td style="">b</td>
+			<td style="">b</td>
+			</tr>
+		<tr>
+			<td style="">b</td>
+			<td style="">a</td>
+			<td style="">b</td>
+			<td style="">b</td>
+		</tr>
+	</tbody>
+	</table>
+</div>
+<div id="container" style="border: 1px solid green; margin-top:25px;">
+	<table id="mytable2" style="width:100%; border: 1px solid red;" border="0" cellspacing="0" cellpadding="0" >
+	<thead>
+		<tr>
+			<th style="">Dit is een  zin!</th>
+			<th style="">b</th>
+			<th style="">b</th>
+			<th style="">b</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="">Dit is een  zin!</td>
+			<td style="">b</td>
+			<td style="">b</td>
+			<td style="">b</td>
+		</tr>
+		<tr>
+			<td style="">b</td>
+			<td style="">a</td>
+			<td style="">b</td>
+			<td style="">b</td>
+			</tr>
+		<tr>
+			<td style="">b</td>
+			<td style="">a</td>
+			<td style="">b</td>
+			<td style="">b</td>
+		</tr>
+	</tbody>
+	</table>
+</div>
+
+</body>
+</html>
